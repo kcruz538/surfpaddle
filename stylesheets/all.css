@@ -1,0 +1,1568 @@
+@charset "UTF-8";
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+/* line 1, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #1F6EAD;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  /* line 13, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/extends/_button.scss */
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #13456c;
+    color: white; }
+  /* line 18, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/extends/_button.scss */
+  button:disabled,
+  input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/* line 1, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 10, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 22, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 2.25em; }
+
+/* line 26, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 30, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.75em; }
+
+/* line 34, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1.5em; }
+
+/* line 38, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 42, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 46, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 50, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #1F6EAD;
+  text-decoration: none; }
+  /* line 55, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+  a:hover {
+    color: #13456c; }
+  /* line 59, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    color: #13456c;
+    outline: none; }
+
+/* line 65, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 73, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 79, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #DDD;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 86, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 90, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_typography.scss */
+  cite:before {
+    content: "\2014 \00A0"; }
+
+/* line 1, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #DDD;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 8, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em; }
+
+/* line 16, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 20, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 24, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 44, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  /* line 48, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #1F6EAD;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(27, 96, 151, 0.7);
+    outline: none; }
+
+/* line 55, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 59, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 63, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 69, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+/* line 74, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 1, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #DDD;
+  padding: 0.75em 0; }
+
+/* line 20, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/* line 1, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+/* line 20, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* line 2, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 8, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+h1,
+p {
+  color: #080707;
+  font-family: "Myrid Pro", "Gil Sans MT", Calibri, sans-serif;
+  font-weight: 200;
+  font-size: 25px; }
+
+/* line 18, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.hero {
+  background: url("http://www.kiteboardsurfing.org/wp-content/uploads/2012/08/surfing-girls-photos-30-650x380.jpg"), -webkit-linear-gradient(10deg, #0c411a, #0c2941), no-repeat #0c2941 scroll;
+  background: url("http://www.kiteboardsurfing.org/wp-content/uploads/2012/08/surfing-girls-photos-30-650x380.jpg"), linear-gradient(10deg, #0c411a, #0c2941), no-repeat #0c2941 scroll;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 4em; }
+  /* line 32, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .hero .hero-logo img {
+    height: 3em;
+    margin-bottom: 2.5em; }
+  /* line 37, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .hero .hero-inner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10em;
+    margin: auto;
+    text-align: center;
+    color: white; }
+    /* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .hero .hero-inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .hero .hero-inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 45, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .hero .hero-inner button {
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      box-shadow: inset 0 1px 0 0 white;
+      color: #333333;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      background-color: white;
+      background-image: -webkit-linear-gradient(white, #e3e3e3);
+      background-image: linear-gradient(white, #e3e3e3);
+      padding: 7px 18px;
+      text-decoration: none;
+      text-shadow: 0 1px 0 white;
+      background-clip: padding-box;
+      border: 1px solid #dfd8d8;
+      border-radius: 3px;
+      box-shadow: inset 0 1px 0 0 white;
+      color: #333333;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: bold;
+      background-color: white;
+      background-image: -webkit-linear-gradient(white, #e5e0e0);
+      background-image: linear-gradient(white, #e5e0e0);
+      padding: 7px 18px;
+      text-decoration: none;
+      text-shadow: 0 1px 0 white;
+      background-clip: padding-box;
+      font-size: 1em;
+      outline: none; }
+      /* line 131, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+      .hero .hero-inner button:hover:not(:disabled) {
+        box-shadow: inset 0 1px 0 0 white;
+        cursor: pointer;
+        background-color: #f2f2f2;
+        background-image: -webkit-linear-gradient(#f2f2f2, #dbdbdb);
+        background-image: linear-gradient(#f2f2f2, #dbdbdb); }
+      /* line 147, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+      .hero .hero-inner button:active:not(:disabled), .hero .hero-inner button:focus:not(:disabled) {
+        border: 1px solid #dbdbdb;
+        box-shadow: inset 0 0 8px 4px #d4d4d4, inset 0 0 8px 4px #d4d4d4; }
+      /* line 131, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+      .hero .hero-inner button:hover:not(:disabled) {
+        box-shadow: inset 0 1px 0 0 white;
+        cursor: pointer;
+        background-color: #f2f2f2;
+        background-image: -webkit-linear-gradient(#f2f2f2, #ded8d8);
+        background-image: linear-gradient(#f2f2f2, #ded8d8); }
+      /* line 147, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+      .hero .hero-inner button:active:not(:disabled), .hero .hero-inner button:focus:not(:disabled) {
+        border: 1px solid #dfd8d8;
+        box-shadow: inset 0 0 8px 4px #d7d1d1, inset 0 0 8px 4px #d7d1d1; }
+      /* line 51, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+      .hero .hero-inner button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed; }
+    /* line 51, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .hero .hero-inner .hero-copy {
+      text-align: center; }
+      /* line 54, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .hero .hero-inner .hero-copy h1 {
+        font-size: 1.6em;
+        margin-bottom: .5em; }
+        @media screen and (min-width: 53.75em) {
+          /* line 54, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          .hero .hero-inner .hero-copy h1 {
+            font-size: 1.8em; } }
+      /* line 63, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .hero .hero-inner .hero-copy p {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+        margin: auto;
+        margin-bottom: 3em;
+        font-weight: 200;
+        line-height: 1.4em; }
+        @media screen and (min-width: 53.75em) {
+          /* line 63, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          .hero .hero-inner .hero-copy p {
+            font-size: 1.1em;
+            max-width: 40%; } }
+
+/* line 85, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.side-image {
+  background: #F9F9F9; }
+  @media screen and (min-width: 53.75em) {
+    /* line 85, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .side-image {
+      display: table;
+      width: 100%;
+      table-layout: fixed; }
+      /* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+      .side-image:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  /* line 92, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .side-image .images-wrapper {
+    background: url("http://static.guim.co.uk/sys-images/Guardian/About/General/2012/1/1/1325435486536/Surfer-Andy-Irons-007.jpg"), -webkit-linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
+    background: url("http://static.guim.co.uk/sys-images/Guardian/About/General/2012/1/1/1325435486536/Surfer-Andy-Irons-007.jpg"), linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
+    background-color: #B5EBEB;
+    border-bottom: 1px solid rgba(38, 74, 38, 0.2);
+    background-size: cover;
+    display: block;
+    min-height: 12em;
+    padding: 3em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 92, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .side-image .images-wrapper {
+        display: table-cell;
+        width: 33.33333%;
+        background-position: bottom;
+        background-size: cover;
+        border-right: 1px solid rgba(38, 74, 38, 0.2); } }
+  /* line 112, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .side-image .content {
+    display: table-cell;
+    width: 100%;
+    padding: 1em 1em 4em 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 112, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .side-image .content {
+        display: table-cell;
+        width: 66.66667%;
+        padding: 4em 4em 8em 4em; } }
+  /* line 122, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .side-image .content h1 {
+    margin-bottom: .9em; }
+  /* line 126, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .side-image .content h4 {
+    background: #5DAC5D;
+    color: white;
+    display: inline-block;
+    font-size: .75em;
+    font-weight: 800;
+    margin-bottom: 1.3em;
+    padding: 3px 8px;
+    text-transform: uppercase; }
+  /* line 137, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .side-image .content p {
+    color: gray;
+    margin-bottom: 3em; }
+  /* line 142, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .side-image .content button {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 white;
+    color: #333333;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: white;
+    background-image: -webkit-linear-gradient(white, #e3e3e3);
+    background-image: linear-gradient(white, #e3e3e3);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 white;
+    background-clip: padding-box;
+    border: 1px solid #dfd8d8;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 white;
+    color: #333333;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: white;
+    background-image: -webkit-linear-gradient(white, #e5e0e0);
+    background-image: linear-gradient(white, #e5e0e0);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 white;
+    background-clip: padding-box;
+    font-size: 1em;
+    outline: none; }
+    /* line 131, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 white;
+      cursor: pointer;
+      background-color: #f2f2f2;
+      background-image: -webkit-linear-gradient(#f2f2f2, #dbdbdb);
+      background-image: linear-gradient(#f2f2f2, #dbdbdb); }
+    /* line 147, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:active:not(:disabled), .side-image .content button:focus:not(:disabled) {
+      border: 1px solid #dbdbdb;
+      box-shadow: inset 0 0 8px 4px #d4d4d4, inset 0 0 8px 4px #d4d4d4; }
+    /* line 131, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 white;
+      cursor: pointer;
+      background-color: #f2f2f2;
+      background-image: -webkit-linear-gradient(#f2f2f2, #ded8d8);
+      background-image: linear-gradient(#f2f2f2, #ded8d8); }
+    /* line 147, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:active:not(:disabled), .side-image .content button:focus:not(:disabled) {
+      border: 1px solid #dfd8d8;
+      box-shadow: inset 0 0 8px 4px #d7d1d1, inset 0 0 8px 4px #d7d1d1; }
+    /* line 51, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+    .side-image .content button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
+
+/* line 151, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+header.navigation {
+  background-color: #1F6EAD;
+  border-bottom: 1px solid #175382;
+  height: 60px;
+  width: 100%;
+  z-index: 999; }
+  /* line 173, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .navigation-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 9999; }
+    /* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+  /* line 180, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .logo {
+    float: left;
+    max-height: 60px;
+    padding-left: 1em;
+    padding-right: 2em; }
+    /* line 186, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation .logo img {
+      max-height: 60px;
+      padding: .8em 0; }
+  /* line 194, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .navigation-menu-button {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    float: right;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      /* line 194, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .navigation-menu-button {
+        display: none; } }
+    /* line 209, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation .navigation-menu-button:hover {
+      color: white; }
+  /* line 216, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .nav {
+    z-index: 9999999;
+    float: none; }
+    @media screen and (min-width: 53.75em) {
+      /* line 216, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .nav {
+        float: left; } }
+  /* line 224, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation ul#navigation-menu {
+    -webkit-transform-style: preserve-3d;
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 224, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul#navigation-menu {
+        display: inline;
+        margin: 0;
+        padding: 0; } }
+  /* line 243, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation ul li.nav-link {
+    background: #1F6EAD;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: .8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 243, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul li.nav-link {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        text-decoration: none;
+        width: auto; } }
+    /* line 261, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation ul li.nav-link a {
+      color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      font-weight: 400; }
+      @media screen and (min-width: 53.75em) {
+        /* line 261, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation ul li.nav-link a {
+          padding-right: 1em; } }
+      /* line 270, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul li.nav-link a:hover {
+        color: white; }
+  /* line 276, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .active-nav-item a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 3px; }
+  /* line 283, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation li.more.nav-link {
+    padding-right: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 283, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation li.more.nav-link {
+        padding-right: 1em; } }
+    /* line 290, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link > ul > li:first-child a {
+      padding-top: 1em; }
+    /* line 294, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link a {
+      margin-right: 1em; }
+    /* line 298, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link > a {
+      padding-right: 0.6em; }
+    /* line 302, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link > a:after {
+      position: absolute;
+      top: auto;
+      right: -0.4em;
+      bottom: auto;
+      left: auto;
+      content: '\25BE';
+      color: rgba(255, 255, 255, 0.7); }
+  /* line 309, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation li.more {
+    overflow: visible;
+    padding-right: 0; }
+    /* line 313, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more a {
+      padding-right: .8em; }
+    /* line 317, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 53.75em) {
+        /* line 317, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation li.more > a {
+          margin-right: 1em; } }
+      /* line 325, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation li.more > a:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; }
+    /* line 333, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more:hover > .submenu {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      /* line 309, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation li.more {
+        padding-right: .8em;
+        position: relative; } }
+  /* line 343, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation ul.submenu {
+    display: none;
+    padding-left: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 343, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul.submenu {
+        left: -1em;
+        position: absolute;
+        top: 1.5em; } }
+    @media screen and (min-width: 53.75em) {
+      /* line 353, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul.submenu .submenu {
+        left: 11.8em;
+        top: 0; } }
+    /* line 360, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation ul.submenu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        /* line 360, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation ul.submenu li {
+          line-height: 46.15385px; }
+          /* line 367, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          header.navigation ul.submenu li:first-child > a {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+          /* line 372, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          header.navigation ul.submenu li:last-child > a {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-bottom: .7em; } }
+      /* line 379, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul.submenu li a {
+        background-color: #1d66a0;
+        display: inline-block;
+        text-align: right;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          /* line 379, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          header.navigation ul.submenu li a {
+            background-color: #1F6EAD;
+            padding-left: 1em;
+            text-align: left;
+            width: 12em; } }
+  /* line 397, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .navigation-tools {
+    display: block;
+    padding-right: 1em;
+    padding-left: 0.5em;
+    clear: both;
+    background: #505050; }
+    /* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-tools:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 53.75em) {
+      /* line 397, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .navigation-tools {
+        background: transparent;
+        float: right;
+        clear: none; } }
+  /* line 412, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation a.sign-up {
+    margin-top: 1.2em;
+    float: right;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline;
+    background: #1F6EAD;
+    border-radius: 3px;
+    color: white;
+    font-size: .8em;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: .4em .5em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 412, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation a.sign-up {
+        padding: .5em 1em; } }
+    /* line 429, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation a.sign-up:hover {
+      background: #278ad8; }
+  /* line 436, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .search-bar {
+    padding: .85em .6em;
+    float: left; }
+    /* line 443, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation .search-bar .search-and-submit {
+      position: relative; }
+      /* line 446, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .search-bar .search-and-submit input[type=search] {
+        background: #237cc3;
+        border: 1px solid #1b6097;
+        padding: .6em .8em;
+        font-size: .9em;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.7);
+        border-radius: 6px;
+        margin: 0; }
+        @media screen and (min-width: 53.75em) {
+          /* line 446, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          header.navigation .search-bar .search-and-submit input[type=search] {
+            width: 100%; } }
+      /* line 461, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .search-bar .search-and-submit button[type=submit] {
+        border: 1px solid #1672bb;
+        border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 #83b8e2;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        background-color: #3c95dc;
+        background-image: -webkit-linear-gradient(#3c95dc, #187ac8);
+        background-image: linear-gradient(#3c95dc, #187ac8);
+        padding: 7px 18px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #0f67ae;
+        background-clip: padding-box;
+        position: absolute;
+        top: 0.3em;
+        right: 0.3em;
+        bottom: 0.3em;
+        left: auto;
+        outline: none;
+        padding: 0 15px; }
+        /* line 131, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:hover:not(:disabled) {
+          box-shadow: inset 0 1px 0 0 #59a0d9;
+          cursor: pointer;
+          background-color: #2c89d3;
+          background-image: -webkit-linear-gradient(#2c89d3, #1772ba);
+          background-image: linear-gradient(#2c89d3, #1772ba); }
+        /* line 147, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:active:not(:disabled), header.navigation .search-bar .search-and-submit button[type=submit]:focus:not(:disabled) {
+          border: 1px solid #1672bb;
+          box-shadow: inset 0 0 8px 4px #1769ab, inset 0 0 8px 4px #1769ab; }
+        /* line 51, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+        /* line 471, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit] img {
+          height: 12px;
+          opacity: .7; }
+    @media screen and (min-width: 53.75em) {
+      /* line 436, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .search-bar {
+        width: 16em;
+        position: relative;
+        display: inline-block; }
+        /* line 483, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation .search-bar input {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          display: block; } }
+
+/* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+.cards:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 494, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.card {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #e6e6e6;
+  position: relative; }
+  @media screen and (min-width: 53.75em) {
+    /* line 494, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .card {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 38, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/neat/grid/_span-columns.scss */
+      .card:last-child {
+        margin-right: 0; }
+      /* line 52, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/neat/grid/_omega.scss */
+      .card:nth-child(3n) {
+        margin-right: 0; }
+      /* line 57, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/neat/grid/_omega.scss */
+      .card:nth-child(3n+1) {
+        clear: left; } }
+  /* line 518, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .card .card-image {
+    overflow: hidden;
+    max-height: 150px; }
+    /* line 522, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .card .card-image img {
+      width: 100%;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      background: #DBD199;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+  /* line 531, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .card .ribbon-wrapper {
+    height: 85px;
+    width: 85px;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    right: -1px; }
+    /* line 540, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .card .ribbon-wrapper .ribbon {
+      font-size: .8em;
+      font-weight: 800;
+      text-align: center;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: relative;
+      padding: 2px 7px;
+      left: -5px;
+      top: 15px;
+      width: 120px;
+      background-color: #1F6EAD;
+      color: white;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); }
+  /* line 556, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .card .card-header {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #DDD;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    padding: 0.5em 0.809em; }
+  /* line 565, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .card .card-copy {
+    padding: 0.75em 0.809em;
+    font-size: .9em;
+    line-height: 1.5em; }
+  /* line 571, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .card .card-stats {
+    padding: 0.75em 0.809em;
+    overflow: auto; }
+    /* line 575, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .card .card-stats ul li {
+      display: inline;
+      color: #278ad8;
+      font-weight: 800;
+      font-size: 1.2em;
+      float: left;
+      border-right: 1px solid rgba(51, 51, 51, 0.2);
+      line-height: 1.1em;
+      padding: 0 .7em 0 .7em; }
+      /* line 585, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .card .card-stats ul li:first-child {
+        padding-left: 0; }
+      /* line 589, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .card .card-stats ul li:last-child {
+        border-right: 0; }
+      /* line 593, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .card .card-stats ul li span {
+        color: #333;
+        font-size: .7em;
+        display: block;
+        font-weight: normal; }
+  /* line 602, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .card:hover {
+    background-color: white; }
+    /* line 605, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .card:hover .card-image img {
+      background: #e2daac; }
+    /* line 609, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .card:hover .card-header {
+      background-color: white; }
+  /* line 614, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .card:active {
+    background-color: #f7f7f7; }
+    /* line 617, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .card:active .card-header {
+      background-color: #f7f7f7; }
+
+/* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+.grid-items:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 646, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.grid-items .grid-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  height: 14em;
+  background: #3e6b8e;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+  padding: 2em;
+  border-top: 0;
+  border-bottom: 0px solid white;
+  border-left: 0px solid white;
+  border-right: 0px solid white;
+  text-align: center;
+  cursor: pointer; }
+  @media screen and (min-width: 53.75em) {
+    /* line 646, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .grid-items .grid-item {
+      width: 25%; } }
+  /* line 666, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(1) {
+    background-color: #3e6b8e;
+    box-shadow: inset 0px 0px 1px 2px #2e506b; }
+    /* line 670, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(1):hover {
+      background-color: #2e506b;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 666, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(2) {
+    background-color: #3581A5;
+    box-shadow: inset 0px 0px 1px 2px #29637e; }
+    /* line 670, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(2):hover {
+      background-color: #29637e;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 666, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(3) {
+    background-color: #5FBEBE;
+    box-shadow: inset 0px 0px 1px 2px #44a6a6; }
+    /* line 670, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(3):hover {
+      background-color: #44a6a6;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 666, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(4) {
+    background-color: #98C79A;
+    box-shadow: inset 0px 0px 1px 2px #77b57a; }
+    /* line 670, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(4):hover {
+      background-color: #77b57a;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 666, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(5) {
+    background-color: #A7A891;
+    box-shadow: inset 0px 0px 1px 2px #909175; }
+    /* line 670, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(5):hover {
+      background-color: #909175;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 666, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(6) {
+    background-color: #BDCC97;
+    box-shadow: inset 0px 0px 1px 2px #a7bb75; }
+    /* line 670, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(6):hover {
+      background-color: #a7bb75;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+  /* line 666, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .grid-items .grid-item:nth-child(7) {
+    background-color: #979EA0;
+    box-shadow: inset 0px 0px 1px 2px #7c8588; }
+    /* line 670, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .grid-items .grid-item:nth-child(7):hover {
+      background-color: #7c8588;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
+/* line 681, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.grid-items .grid-item img {
+  display: block;
+  height: 3em;
+  margin: auto;
+  margin-bottom: 1em; }
+/* line 688, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.grid-items .grid-item h1 {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: .4em; }
+/* line 694, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.grid-items .grid-item p {
+  margin: auto;
+  color: rgba(255, 255, 255, 0.7); }
+  @media screen and (min-width: 40em) {
+    /* line 694, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .grid-items .grid-item p {
+      max-width: 70%; } }
+@media screen and (min-width: 53.75em) {
+  /* line 702, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .grid-items .grid-item-big {
+    width: 66.66667%; } }
+@media screen and (min-width: 40em) {
+  /* line 706, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .grid-items .grid-item-big p {
+    max-width: 60%; } }
+/* line 713, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.grid-items .grid-item-image1 {
+  background: url(http://24.media.tumblr.com/90b4e9d9e529ae4ef90a29db4bcce4f6/tumblr_mguiujaOJb1rxr2cho1_500.jpg);
+  background-color: #3e6b8e;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+/* line 719, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.grid-items .grid-item-image2 {
+  background: url(http://www.truebeer.com/assets/images/European-Beer-Mug-1.jpg);
+  background-color: #3e6b8e;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+/* line 725, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.grid-items .grid-item-image3 {
+  background: url(http://www.craveonline.com/images/stories/78189/image_assets/image_1.jpg);
+  background-color: #3e6b8e;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+/* line 731, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.grid-items .grid-item-image4 {
+  background: url(/images/lake-transparent.png);
+  background-color: #3e6b8e;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+/* line 739, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.grid-items .grid-item-image {
+  background: url(/images/lake-transparent.png);
+  background-color: #3e6b8e;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+
+/* line 751, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.wrapper-for-content-outside-of-footer {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em; }
+
+/* line 758, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+html, body {
+  height: 100%; }
+
+/* line 762, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.footer-2, .push {
+  height: 17em; }
+  @media screen and (min-width: 53.75em) {
+    /* line 762, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .footer-2, .push {
+      height: 4em; } }
+
+/* line 770, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+.footer-2 {
+  background: #1f3547;
+  padding: 1.5em;
+  width: 100%; }
+  /* line 780, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .footer-2 .footer-logo {
+    margin-right: 1em;
+    margin-bottom: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 780, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .footer-2 .footer-logo {
+        float: left;
+        margin-bottom: 0; } }
+  /* line 790, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .footer-2 .footer-logo img {
+    height: 1.6em; }
+  /* line 794, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .footer-2 ul {
+    margin-bottom: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 794, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .footer-2 ul {
+        float: left;
+        margin-left: 1em;
+        margin-bottom: 0; } }
+  /* line 803, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .footer-2 ul li {
+    padding-right: 1em;
+    font-weight: 800; }
+    @media screen and (min-width: 53.75em) {
+      /* line 803, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .footer-2 ul li {
+        display: inline;
+        text-align: left; } }
+  /* line 813, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .footer-2 ul li a {
+    color: rgba(255, 255, 255, 0.4); }
+    /* line 816, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .footer-2 ul li a:hover {
+      color: white; }
+  @media screen and (min-width: 53.75em) {
+    /* line 821, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .footer-2 .footer-secondary-links {
+      float: right; } }
+  /* line 826, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .footer-2 .footer-secondary-links li {
+    font-size: .8em;
+    font-weight: 400; }
+  /* line 831, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  .footer-2 .footer-secondary-links ul.footer-social {
+    margin-top: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 831, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .footer-2 .footer-secondary-links ul.footer-social {
+        float: right;
+        margin-top: 0; } }
+    /* line 839, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .footer-2 .footer-secondary-links ul.footer-social li {
+      float: left;
+      font-size: 1em;
+      padding-right: .7em; }
+      /* line 844, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .footer-2 .footer-secondary-links ul.footer-social li:last-child {
+        padding-right: 0; }
+    /* line 849, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    .footer-2 .footer-secondary-links ul.footer-social img {
+      opacity: .7;
+      height: 1.6em;
+      padding: 1px; }
+      /* line 854, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      .footer-2 .footer-secondary-links ul.footer-social img:hover {
+        opacity: 1; }
+
+/* line 866, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+header.navigation {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  height: 60px;
+  width: 100%;
+  z-index: 999; }
+  /* line 888, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .navigation-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 9999; }
+    /* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+  /* line 895, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .logo {
+    float: left;
+    max-height: 60px;
+    padding-left: 1em;
+    padding-right: 2em; }
+    /* line 901, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation .logo img {
+      max-height: 60px;
+      padding: .8em 0; }
+  /* line 909, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .navigation-menu-button {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    float: right;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      /* line 909, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .navigation-menu-button {
+        display: none; } }
+    /* line 924, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation .navigation-menu-button:hover {
+      color: white; }
+  /* line 931, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .nav {
+    z-index: 9999999;
+    float: none; }
+    @media screen and (min-width: 53.75em) {
+      /* line 931, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .nav {
+        float: left; } }
+  /* line 939, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation ul#navigation-menu {
+    -webkit-transform-style: preserve-3d;
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 939, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul#navigation-menu {
+        display: inline;
+        margin: 0;
+        padding: 0; } }
+  /* line 958, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation ul li.nav-link {
+    background: transparent;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: .8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 958, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul li.nav-link {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        text-decoration: none;
+        width: auto; } }
+    /* line 976, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation ul li.nav-link a {
+      color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      font-weight: 400; }
+      @media screen and (min-width: 53.75em) {
+        /* line 976, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation ul li.nav-link a {
+          padding-right: 1em; } }
+      /* line 985, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul li.nav-link a:hover {
+        color: white; }
+  /* line 991, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .active-nav-item a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 3px; }
+  /* line 998, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation li.more.nav-link {
+    padding-right: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 998, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation li.more.nav-link {
+        padding-right: 1em; } }
+    /* line 1005, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link > ul > li:first-child a {
+      padding-top: 1em; }
+    /* line 1009, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link a {
+      margin-right: 1em; }
+    /* line 1013, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link > a {
+      padding-right: 0.6em; }
+    /* line 1017, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more.nav-link > a:after {
+      position: absolute;
+      top: auto;
+      right: -0.4em;
+      bottom: auto;
+      left: auto;
+      content: '\25BE';
+      color: rgba(255, 255, 255, 0.7); }
+  /* line 1024, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation li.more {
+    overflow: visible;
+    padding-right: 0; }
+    /* line 1028, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more a {
+      padding-right: .8em; }
+    /* line 1032, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 53.75em) {
+        /* line 1032, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation li.more > a {
+          margin-right: 1em; } }
+      /* line 1040, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation li.more > a:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; }
+    /* line 1048, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation li.more:hover > .submenu {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      /* line 1024, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation li.more {
+        padding-right: .8em;
+        position: relative; } }
+  /* line 1058, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation ul.submenu {
+    display: none;
+    padding-left: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 1058, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul.submenu {
+        left: -1em;
+        position: absolute;
+        top: 1.5em; } }
+    @media screen and (min-width: 53.75em) {
+      /* line 1068, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul.submenu .submenu {
+        left: 11.8em;
+        top: 0; } }
+    /* line 1075, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation ul.submenu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        /* line 1075, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation ul.submenu li {
+          line-height: 46.15385px; }
+          /* line 1082, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          header.navigation ul.submenu li:first-child > a {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+          /* line 1087, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          header.navigation ul.submenu li:last-child > a {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-bottom: .7em; } }
+      /* line 1094, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation ul.submenu li a {
+        background-color: transparent;
+        display: inline-block;
+        text-align: right;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          /* line 1094, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          header.navigation ul.submenu li a {
+            background-color: transparent;
+            padding-left: 1em;
+            text-align: left;
+            width: 12em; } }
+  /* line 1112, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .navigation-tools {
+    display: block;
+    padding-right: 1em;
+    padding-left: 0.5em;
+    clear: both;
+    background: #505050; }
+    /* line 15, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-tools:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 53.75em) {
+      /* line 1112, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .navigation-tools {
+        background: transparent;
+        float: right;
+        clear: none; } }
+  /* line 1127, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation a.sign-up {
+    margin-top: 1.2em;
+    float: right;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline;
+    background: #1F6EAD;
+    border-radius: 3px;
+    color: white;
+    font-size: .8em;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: .4em .5em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 1127, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation a.sign-up {
+        padding: .5em 1em; } }
+    /* line 1144, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation a.sign-up:hover {
+      background: #278ad8; }
+  /* line 1151, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+  header.navigation .search-bar {
+    padding: .85em .6em;
+    float: left; }
+    /* line 1158, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+    header.navigation .search-bar .search-and-submit {
+      position: relative; }
+      /* line 1161, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .search-bar .search-and-submit input[type=search] {
+        background: rgba(13, 13, 13, 0);
+        border: 1px solid transparent;
+        padding: .6em .8em;
+        font-size: .9em;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.7);
+        border-radius: 6px;
+        margin: 0; }
+        @media screen and (min-width: 53.75em) {
+          /* line 1161, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+          header.navigation .search-bar .search-and-submit input[type=search] {
+            width: 100%; } }
+      /* line 1176, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .search-bar .search-and-submit button[type=submit] {
+        border: 1px solid rgba(3, 3, 3, 0);
+        border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 rgba(77, 77, 77, 0);
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        background-color: rgba(38, 38, 38, 0);
+        background-image: -webkit-linear-gradient(rgba(38, 38, 38, 0), rgba(10, 10, 10, 0));
+        background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(10, 10, 10, 0));
+        padding: 7px 18px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 transparent;
+        background-clip: padding-box;
+        border: 1px solid rgba(3, 2, 2, 0);
+        border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 rgba(77, 77, 77, 0);
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        background-color: rgba(38, 38, 38, 0);
+        background-image: -webkit-linear-gradient(rgba(38, 38, 38, 0), rgba(11, 9, 9, 0));
+        background-image: linear-gradient(rgba(38, 38, 38, 0), rgba(11, 9, 9, 0));
+        padding: 7px 18px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 transparent;
+        background-clip: padding-box;
+        position: absolute;
+        top: 0.3em;
+        right: 0.3em;
+        bottom: 0.3em;
+        left: auto;
+        outline: none;
+        padding: 0 15px; }
+        /* line 131, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:hover:not(:disabled) {
+          box-shadow: inset 0 1px 0 0 rgba(51, 51, 51, 0);
+          cursor: pointer;
+          background-color: rgba(26, 26, 26, 0);
+          background-image: -webkit-linear-gradient(rgba(26, 26, 26, 0), rgba(3, 3, 3, 0));
+          background-image: linear-gradient(rgba(26, 26, 26, 0), rgba(3, 3, 3, 0)); }
+        /* line 147, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:active:not(:disabled), header.navigation .search-bar .search-and-submit button[type=submit]:focus:not(:disabled) {
+          border: 1px solid rgba(3, 3, 3, 0);
+          box-shadow: inset 0 0 8px 4px transparent, inset 0 0 8px 4px transparent; }
+        /* line 131, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:hover:not(:disabled) {
+          box-shadow: inset 0 1px 0 0 rgba(51, 51, 51, 0);
+          cursor: pointer;
+          background-color: rgba(26, 26, 26, 0);
+          background-image: -webkit-linear-gradient(rgba(26, 26, 26, 0), rgba(3, 2, 2, 0));
+          background-image: linear-gradient(rgba(26, 26, 26, 0), rgba(3, 2, 2, 0)); }
+        /* line 147, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:active:not(:disabled), header.navigation .search-bar .search-and-submit button[type=submit]:focus:not(:disabled) {
+          border: 1px solid rgba(3, 2, 2, 0);
+          box-shadow: inset 0 0 8px 4px transparent, inset 0 0 8px 4px transparent; }
+        /* line 51, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/bourbon/addons/_button.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit]:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+        /* line 1186, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation .search-bar .search-and-submit button[type=submit] img {
+          height: 12px;
+          opacity: .7; }
+    @media screen and (min-width: 53.75em) {
+      /* line 1151, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+      header.navigation .search-bar {
+        width: 16em;
+        position: relative;
+        display: inline-block; }
+        /* line 1198, /Users/kevincruz/ruby/surf/paddle/new/web/source/stylesheets/all.scss */
+        header.navigation .search-bar input {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          display: block; } }
