@@ -1,0 +1,8 @@
+<%= simple_form_for @type do |f| %>
+  <%= f.input :name %>
+  <%= f.association :category %>
+  <%= f.input :photo %>
+  <%= f.submit class: "btn btn-primary btn-lg" %>
+<% end %>
+
+  
